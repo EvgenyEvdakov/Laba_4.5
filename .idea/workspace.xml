@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c48eb8-27a9-4d0d-af30-62fff4a0eec5" name="Changes" comment="" />
+    <list default="true" id="88c48eb8-27a9-4d0d-af30-62fff4a0eec5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/doc/Laba_4.5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Laba_4.5.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment" beforeDir="false" afterPath="$PROJECT_DIR$/environment" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
