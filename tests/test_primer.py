@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import unittest
 from datetime import date
-import sys
 
-sys.path.append('../src')
-from src.primer import Staff, IllegalYearError, UnknownCommandError
+
+sys.path.append("../src")
+from src.primer import IllegalYearError, Staff, UnknownCommandError
 
 
 class TestStaff(unittest.TestCase):

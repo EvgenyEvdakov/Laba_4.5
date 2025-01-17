@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import unittest
-from unittest.mock import patch
 import pathlib
 import sys
+import unittest
+from unittest.mock import patch
 
-sys.path.append('../src')
+
+sys.path.append("../src")
 from idz import DirectoryViewer, parse_arguments
 
 

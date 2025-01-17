@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#выполнить индивидуальное задание 2 лабораторной работы 2.19, добавив аннтотации типов. Выполнить проверку программы
+# выполнить индивидуальное задание 2 лабораторной работы 2.19, добавив аннтотации типов. Выполнить проверку программы
 # с помощью утилиты mypy.
 
 import argparse
-import sys
 import pathlib
 import subprocess
-from typing import Optional, List, Protocol
+from typing import List, Optional, Protocol
 
 
 class TypeChecker(Protocol):
@@ -42,7 +41,8 @@ class DirectoryViewer:
 
     def tree(self, directory: pathlib.Path, prefix: str = "", level: int = 0) -> None:
         """Рекурсивный вывод содержимого каталога с учетом аргументов командной строки."""
-        if self.args.p is not None and level > self.args.p:
+        # Проверка на None и преобразование
+        if self.args.p is not None and level > int(self.args.p):  # Добавляем проверку на None
             return
 
         contents = self.get_directory_contents(directory)
@@ -106,4 +106,3 @@ def main(command_line: Optional[List[str]] = None, type_checker: Optional[TypeCh
 if __name__ == "__main__":
     # Основная функция вызывается с проверкой типов через MypyTypeChecker.
     main(type_checker=MypyTypeChecker())
-
